@@ -31,3 +31,31 @@ Example Response
       email: "xxx",
       enable: Yes|No
     }
+
+
+**SOLUTION**
+
+Implemented JWT token authentication
+1) Create User (Only Admin can create User) - POST (/User)
+  {
+    email:"xxxx"
+    firstName : "sss",
+    lastName : "sss"
+    role: admin|user
+   }
+   
+ 2) GET ALL USERs (Only ADMIN can get all user details of project) - GET /user
+
+
+3)GET UserID details -  GET /user/:email
+   If user is there in the user table , he can view his details
+   User cannot view other user details
+   
+ 4) GET Feature (params : email , featureName) - GET /feature?featureName=xxx&email=xxx
+ 
+ 6) POST Feature (only user of type admin can add features and assign users) =  POST /feature
+     {
+       featureName: xxx,
+       email: xxx,
+       enable:Yes|No
+      }
