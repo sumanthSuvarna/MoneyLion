@@ -14,6 +14,8 @@ i.e. enabling/disabling certain feature based on a user’s email and feature na
 
 Example Response
 
-_  {
+  {
+  
   "canAccess": true|false (will be true if the user has access to the featureName
-  }_
+  
+  }
