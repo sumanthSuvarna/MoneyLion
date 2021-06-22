@@ -35,6 +35,8 @@ Example Response
 
 **SOLUTION**
 
+External config: Install MongoDB in local , made use of mongoose
+
 Implemented JWT token authentication
 1) Create User (Only Admin can create User) - POST (/User)
   {
